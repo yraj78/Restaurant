@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222;
+    background-color: silver;
+
+}
+.main{
+    width: 1140px;
+    margin: 100px auto;
+}
+.main .section-title{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.main .section-title h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+}
+.main .section-title h2::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #00578c;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.menus{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.menu-column{
+    width: 31%;
+}
+.menu-column h4{
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 16px;
+    background-image: linear-gradient(grey,violet);
+}
+.main .menu-column h4::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #00875c;
+    bottom: 0;
+
+}
+.single-menu img{
+    border-radius: 50%;
+    max-width: 110px;
+    border: 1px dashed #ddd;
+    padding: 3px;
+    margin-right: 13px;
+    transition: 3s;
+}
+.single-menu img:hover{
+    transform: rotate(360deg);
+}
+.single-menu{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin: 30px;
+    flex-direction: column;
+}
+.single-menu .menu-content {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.single-menu .menu-content  span{
+    color: tomato;
+    float: right;
+    font-weight: 600;
+    font-style: italic;
+}
+.btn{
+    width: 200px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 3px solid black;
+    color: black;
+    transition: .3s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.btn:hover{
+    animation: pulse 1s infinite;
+    transition: .3s;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(.9);
+    }
+      100% {
+      transform: scale(1);
+    }
+  }
